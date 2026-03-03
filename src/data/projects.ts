@@ -163,6 +163,7 @@ Mill makes a kitchen food recycler that turns food scraps into nutrient-rich gro
 Founded by Matt Rogers (co-founder of Nest), Mill has raised $100M+ through Series C and partnered with Amazon and Whole Foods for distribution. Named one of TIME's 200 Best Inventions of 2024. The product is a first-of-its-kind connected appliance with no existing safety certification pathway—every UL and FCC standard had to be interpreted and validated from scratch. Filed 18 patents on novel mechanical, thermal, and sensing technologies.`,
     highlights: [
       'Joined pre-seed, scaled through Series C ($100M+ raised)—owned full hardware and firmware stack',
+      'Built and led a multidisciplinary team of mechanical, electrical, firmware, and test engineers',
       'Filed 18 patents spanning mechanical, thermal, and sensing innovations',
       'Led UL 60335 and FCC certification from scratch for a novel high-power connected appliance',
       'Scoped, qualified, and ramped contract manufacturers across US and Mexico to volume production'
@@ -234,9 +235,9 @@ Bumblebee Spaces builds AI-controlled robotic furniture that stores beds, desks,
 
 Backed by prominent Silicon Valley investors and featured in Dezeen, TechCrunch, and The Verge. The system uses ceiling-mounted robots with AI-driven inventory tracking, app-controlled deployment, and FaceID authentication. Each module supports 200+ lb payloads, operates at <40 dB, and is rated for 10,000+ cycles—engineered for residential environments where the hardware operates directly above people.`,
     highlights: [
+      'Led a cross-functional team of mechanical, controls, and test engineers through rapid product iterations',
       'Designed robotic lift modules: structural frame, linear actuation, cable management, and safety interlocks',
       'Engineered multi-layer safety system with load cells, obstruction detection, and mechanical fail-safes',
-      'Integrated mechanical systems with AI controls, app deployment, and FaceID-authenticated access',
       'Delivered production-ready hardware installed in real San Francisco residential units'
     ],
     technologies: ['Robotics', 'Mechanical Design', 'Consumer Products', 'Safety Systems', 'Embedded Systems'],
@@ -258,10 +259,10 @@ GreyOrange builds autonomous mobile robots (AMRs) for goods-to-person warehouse 
 
 GreyOrange has raised $400M+, is planning a $600M US IPO, and deploys robots for IKEA, Flipkart, XPO Logistics, and other major fulfillment operators across Asia, Europe, and North America. The Butler AMR navigates autonomously under warehouse racking, lifts mobile racks weighing up to 500 kg, and transports them to human pick stations. I designed the chassis, drivetrain, payload interface, and rack-engagement mechanism—the architecture that became the foundation for the company's entire product family.`,
     highlights: [
+      'Led a team of design and simulation engineers through concept, prototyping, and production release',
       'Owned end-to-end mechanical architecture: chassis, drivetrain, payload interface, and rack-engagement system',
       'Platform deployed at IKEA, Flipkart, XPO Logistics across global fulfillment centers',
-      'Optimized structure via FEA for 500 kg payload capacity with high-volume sheet metal manufacturing',
-      'Created foundation platform architecture that scaled into multiple product variants'
+      'Optimized structure via FEA for 500 kg payload capacity with high-volume sheet metal manufacturing'
     ],
     technologies: ['Mechanical Design', 'Robotics', 'SolidWorks', 'FEA', 'DFM/DFA'],
     image: amrImg7,
@@ -282,10 +283,10 @@ The XL extends GreyOrange's AMR platform to handle industrial-scale payloads exc
 
 GreyOrange needed to address demand from enterprise customers automating heavier rack configurations without sacrificing fleet density. I re-architected the chassis, drivetrain, and power systems to double payload capacity while maintaining the same aisle-width compatibility as the standard Butler. Redesigned drive modules with higher-torque motors and upgraded battery and thermal management for multi-shift operation. Maximized subassembly commonality with the standard platform to keep supply chain complexity low.`,
     highlights: [
+      'Led mechanical engineering team through design, validation, and production tooling for the XL variant',
       'Architected heavy-payload variant: 1,000+ kg capacity—double the standard Butler platform',
       'Redesigned drivetrain, power, and thermal systems for continuous multi-shift operation',
-      'Maintained same aisle-width compatibility for seamless integration with existing fleets',
-      'Maximized manufacturing commonality with standard platform to reduce supply chain cost'
+      'Maintained same aisle-width compatibility for seamless integration with existing fleets'
     ],
     technologies: ['Heavy Robotics', 'Industrial Design', 'Structural Analysis', 'Power Systems', 'Thermal Management'],
     image: butlerXlImg7,
