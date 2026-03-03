@@ -117,7 +117,7 @@ The physical AI space is experiencing rapid growth, with companies like Figure, 
       'Defined product roadmap, hired team, and led all mechanical and electrical prototyping',
       'Architected multimodal sensor stack: 300-point force, video, audio, IMU, slip, temperature, and texture',
       'Secured early partnerships with robotics integrators for industrial deployment',
-      'Managed MEMS fabrication vendor relationships and sensor module manufacturing'
+      'Built and validated prototypes, designed a scalable data capture system and factory operations'
     ],
     technologies: ['Tactile Sensing', 'Physical AI', 'Multimodal Systems', 'Robotics', 'Computer Vision', 'Hardware Prototyping'],
     image: sensoryLabsImg,
