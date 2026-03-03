@@ -108,16 +108,16 @@ export const projects: Project[] = [
     shortTitle: 'Sensory Labs Tactile Sensing',
     category: 'professional',
     description: 'Founded and led a deep-tech startup building multimodal tactile sensing hardware to give robots human-like touch perception for industrial and physical AI applications.',
-    fullDescription: `Founded Sensory Labs to address a critical gap in robotics: the absence of reliable, high-bandwidth tactile sensing. While computer vision has matured rapidly, manipulation tasks in unstructured environments still fail because robots cannot feel what they are handling. Sensory Labs was built to close that gap.
+    fullDescription: `Founder & CTO, responsible for product vision, technical architecture, and company strategy.
 
-Architected the full hardware and firmware stack for multimodal tactile sensors that fuse pressure, shear, proximity, and thermal data into a unified perception layer. Designed sensor modules for integration into industrial grippers, robotic hands, and custom end-effectors—targeting applications in manufacturing QC, bin picking, and dexterous assembly.
+Sensory Labs builds multimodal tactile sensing hardware that gives robots human-like touch perception for physical AI and industrial automation.
 
-Drove the company from incorporation through initial customer discovery, securing early partnerships with robotics integrators and research labs. Defined the product roadmap, led mechanical and electrical prototyping, and managed relationships with MEMS fabrication partners. The venture operated at the frontier of physical AI—an emerging space now attracting significant capital and attention from major robotics companies.`,
+The physical AI space is experiencing rapid growth, with companies like Figure, 1X, and Sanctuary AI raising billions to build humanoid robots—but nearly all lack reliable tactile feedback. Sensory Labs was founded to fill that critical sensing gap, building hardware that fuses pressure, shear, thermal, and proximity data into a unified perception layer for robotic manipulation. The company targeted high-value applications in manufacturing QC, bin picking, and dexterous assembly, partnering with robotics integrators and research institutions.`,
     highlights: [
-      'Founded and served as CTO—owned product vision, technical architecture, and go-to-market strategy',
-      'Designed multimodal tactile sensor hardware fusing pressure, shear, thermal, and proximity modalities',
-      'Developed sensor integration frameworks for industrial grippers and robotic end-effectors',
-      'Secured early partnerships with robotics integrators and university research labs'
+      'Defined product roadmap, hired team, and led all mechanical and electrical prototyping',
+      'Architected multimodal sensor stack fusing pressure, shear, thermal, and proximity modalities',
+      'Secured early partnerships with robotics integrators and university research labs',
+      'Managed MEMS fabrication vendor relationships and sensor module manufacturing'
     ],
     technologies: ['Tactile Sensing', 'Physical AI', 'Multimodal Systems', 'Robotics', 'Hardware Prototyping'],
     image: sensoryLabsImg,
@@ -132,16 +132,16 @@ Drove the company from incorporation through initial customer discovery, securin
     shortTitle: 'UnitX Visual Inspection',
     category: 'professional',
     description: 'Directed hardware engineering for AI-powered inline inspection systems deployed at GE, Teijin, and other Tier-1 manufacturers—inspecting $6B+ in products annually.',
-    fullDescription: `Joined UnitX as Director of Engineering to scale the hardware platform behind one of the most deployed AI visual inspection systems in North American manufacturing. UnitX systems run continuously at facilities operated by GE, Teijin, Heliene, Linamar, and other Tier-1 manufacturers, with over 5.7 million cumulative hours of operation.
+    fullDescription: `Director of Engineering, leading the hardware engineering organization across mechanical, electrical, and optical disciplines.
 
-Owned the full hardware development lifecycle—from optical system architecture and industrial enclosure design through supplier qualification, DFM, and field deployment. Built and managed a cross-functional engineering team spanning mechanical, electrical, and optical disciplines. Drove standardization of the inspection platform to reduce deployment time by 3x while maintaining sub-millimeter imaging precision across diverse product geometries.
+UnitX builds AI-powered visual inspection systems that automate quality control for high-volume manufacturing.
 
-Established hardware reliability programs, environmental qualification protocols, and factory acceptance testing standards that enabled UnitX to guarantee 24/7/365 uptime in harsh manufacturing environments. The systems I architected achieved 9x lower defect escape rates compared to manual inspection—directly improving yield and reducing scrap costs for customers processing billions of dollars in product annually.`,
+UnitX has deployed 820+ systems across 135 factories, inspecting over $6.1 billion in products annually for customers including GE, Teijin, Heliene, Linamar, and Stanley Electric. Systems have logged 5.7M+ cumulative operating hours. The company's FleX platform delivers 9x lower defect escape rates and 3x faster deployment than legacy solutions, making it one of the most widely adopted AI inspection platforms in North America.`,
     highlights: [
-      'Directed hardware engineering org—hired, mentored, and managed mechanical, electrical, and optical engineers',
-      'Architected inspection platform deployed across 5.7M+ cumulative operating hours at Tier-1 manufacturers',
-      'Drove 3x reduction in deployment cycle time through hardware standardization and modular design',
-      'Delivered 9x improvement in defect escape rate vs. manual inspection for GE, Teijin, and others'
+      'Built and managed cross-functional hardware team spanning mechanical, electrical, and optical engineering',
+      'Standardized inspection platform architecture—drove 3x reduction in deployment cycle time',
+      'Owned full hardware lifecycle: optical design, DFM, supplier qualification, and field deployment',
+      'Established reliability and environmental qualification programs enabling 24/7/365 factory uptime'
     ],
     technologies: ['Computer Vision', 'AI/ML', 'Industrial Hardware', 'Manufacturing Systems', 'Quality Control'],
     image: unitxImg,
@@ -156,16 +156,16 @@ Established hardware reliability programs, environmental qualification protocols
     shortTitle: 'Mill Food Recycler',
     category: 'professional',
     description: 'Founding engineer and Head of Systems Engineering at Mill (TIME\'s Best Inventions 2024). Architected hardware from pre-seed through Series C, filed 18 patents, led UL/FCC certification and contract manufacturing ramp.',
-    fullDescription: `Joined Mill as a founding engineer and grew into Head of Systems Engineering, owning the entire hardware and firmware stack for a first-of-its-kind consumer appliance—from a blank sheet of paper through Series C ($100M+ raised). Mill's kitchen food recycler was recognized as one of TIME's 200 Best Inventions of 2024.
+    fullDescription: `Founding engineer, later Head of Systems Engineering—owned hardware architecture, firmware, reliability, certification, and manufacturing scale-up.
 
-Architected the electromechanical systems, thermal management, and embedded controls for both Gen-1 and Gen-2 products. Led the full certification program from scratch—navigating UL 60335 (US & Canada) and FCC compliance for a high-power, internet-connected appliance with novel drying, grinding, and dehydration subsystems. This was not an incremental update to an existing product category; every safety standard had to be negotiated and validated against a new product paradigm.
+Mill makes a kitchen food recycler that turns food scraps into nutrient-rich grounds, keeping waste out of landfills.
 
-Owned the manufacturing scale-up strategy end-to-end: scoped and qualified contract manufacturers in the US and Mexico, established incoming quality standards, and managed the proto-to-mass-production transition. Filed 18 patents covering novel mechanical, thermal, and sensing technologies. Built and led a multidisciplinary team of mechanical, electrical, firmware, and test engineers through rapid iteration cycles while maintaining rigorous reliability targets.`,
+Founded by Matt Rogers (co-founder of Nest), Mill has raised $100M+ through Series C and partnered with Amazon and Whole Foods for distribution. Named one of TIME's 200 Best Inventions of 2024. The product is a first-of-its-kind connected appliance with no existing safety certification pathway—every UL and FCC standard had to be interpreted and validated from scratch. Filed 18 patents on novel mechanical, thermal, and sensing technologies.`,
     highlights: [
-      'Founding engineer through Series C ($100M+ raised)—owned hardware architecture, reliability, and certification',
+      'Joined pre-seed, scaled through Series C ($100M+ raised)—owned full hardware and firmware stack',
       'Filed 18 patents spanning mechanical, thermal, and sensing innovations',
-      'Led UL 60335 and FCC certification programs from scratch for a novel high-power consumer appliance',
-      'Scoped, qualified, and ramped contract manufacturers across US and Mexico from prototype to volume production'
+      'Led UL 60335 and FCC certification from scratch for a novel high-power connected appliance',
+      'Scoped, qualified, and ramped contract manufacturers across US and Mexico to volume production'
     ],
     technologies: ['Consumer Hardware', 'Systems Architecture', 'UL/FCC Certification', 'DFM/DFA', 'Manufacturing Scale-up'],
     image: millImg,
@@ -180,16 +180,16 @@ Owned the manufacturing scale-up strategy end-to-end: scoped and qualified contr
     shortTitle: 'Zipline Ground Systems',
     category: 'professional',
     description: 'Product Architect on the founding team for Zipline\'s Platform 2—defined ground systems architecture for the next-generation autonomous delivery network (1M+ deliveries globally).',
-    fullDescription: `Recruited onto the founding leadership team for Zipline Platform 2, the company's next-generation autonomous logistics system designed to extend drone delivery from rural healthcare into dense suburban and commercial markets. Zipline has since completed over 1 million autonomous deliveries across multiple continents—Platform 2 is the architecture that scales that capability into everyday commerce.
+    fullDescription: `Product Architect & Engineering Lead on the founding team for Platform 2, reporting directly to co-founder Keenan Wyrobek.
 
-Served as Product Architect for ground systems, reporting directly to co-founder Keenan Wyrobek. Translated high-level product and business objectives into concrete technical requirements, system-level trade studies, and hardware architecture proposals. Conducted on-site audits of prospective shipper facilities to identify integration constraints, space requirements, and operational workflows that shaped system design.
+Zipline operates the world's largest autonomous delivery system, using drones to deliver medical supplies, e-commerce packages, and food on demand.
 
-Developed parametric simulation tools to model ground system sizing across demand scenarios, throughput targets, and unit economics. These models became the quantitative foundation for configuration decisions, capital expenditure planning, and customer deployment proposals. The work defined the hardware systems architecture that Zipline would build against as Platform 2 moved from concept into production.`,
+Zipline has raised $800M+ at a $7.6B valuation, completed 1M+ autonomous deliveries across 22 countries, and partners with governments and retailers including Walmart. Platform 2 is the next-generation architecture designed to scale drone logistics from rural healthcare into dense suburban and commercial markets. I defined the ground systems architecture—building parametric simulation tools for system sizing, throughput modeling, and unit economics that became the quantitative foundation for deployment decisions.`,
     highlights: [
-      'Founding team for Platform 2—defined ground systems architecture alongside Zipline\'s co-founder',
-      'Translated product strategy into technical requirements, system trade studies, and architecture proposals',
-      'Built parametric simulation tools for system sizing, throughput modeling, and unit economics',
-      'Conducted shipper site audits and developed integration frameworks for diverse deployment scenarios'
+      'Defined ground systems architecture for Platform 2 alongside Zipline\'s co-founder',
+      'Built parametric simulation tools for system sizing, throughput, and unit economics modeling',
+      'Translated product strategy into technical requirements and system-level trade studies',
+      'Conducted shipper site audits to identify integration constraints and deployment frameworks'
     ],
     technologies: ['Systems Architecture', 'Simulation Modeling', 'Hardware Integration', 'Logistics Systems', 'Autonomous Delivery'],
     image: ziplineImg,
@@ -204,14 +204,16 @@ Developed parametric simulation tools to model ground system sizing across deman
     shortTitle: 'Low Cost Ventilator',
     category: 'personal',
     description: 'Independently designed a sub-$500 mechanical ventilator targeting deployment in resource-constrained healthcare systems across developing regions.',
-    fullDescription: `Independently designed a low-cost mechanical ventilator system during the COVID-19 pandemic, targeting a bill-of-materials under $500—roughly 1/50th the cost of conventional ICU ventilators. The goal was a device that could be manufactured with locally available components and assembled without specialized tooling, enabling rapid deployment in regions with limited healthcare infrastructure.
+    fullDescription: `Independent project—designed the complete ventilator system from first principles during the COVID-19 pandemic.
 
-Developed the pneumatic circuit, pressure regulation system, and fail-safe mechanisms from first principles. Designed for compliance with key parameters from the UK MHRA Rapidly Manufactured Ventilator System (RMVS) specification, including tidal volume control, PEEP regulation, and alarm systems. Prioritized design-for-manufacture using off-the-shelf components and standard fabrication processes to enable decentralized production.`,
+The goal was a functional mechanical ventilator at <$500 BOM (1/50th the cost of conventional ICU units) that could be manufactured with locally available components in resource-constrained healthcare settings.
+
+Designed to meet key parameters from the UK MHRA Rapidly Manufactured Ventilator System (RMVS) specification, including tidal volume control, PEEP regulation, and alarm systems. Prioritized off-the-shelf components and standard fabrication processes to enable decentralized production without specialized tooling.`,
     highlights: [
-      'Designed complete ventilator system at <$500 BOM—1/50th the cost of conventional ICU units',
+      'Designed complete ventilator system at <$500 BOM—1/50th conventional ICU ventilator cost',
       'Engineered pneumatic circuit with tidal volume control, PEEP regulation, and fail-safe alarms',
-      'Targeted compliance with UK MHRA RMVS specification for emergency ventilator systems',
-      'Optimized for decentralized manufacturing using off-the-shelf components and standard processes'
+      'Targeted UK MHRA RMVS specification compliance for emergency deployment',
+      'Optimized for decentralized manufacturing with off-the-shelf components'
     ],
     technologies: ['Medical Devices', 'Low-Cost Design', 'Pneumatic Systems', 'Healthcare Engineering', 'DFM'],
     image: ventilatorImg,
@@ -226,16 +228,16 @@ Developed the pneumatic circuit, pressure regulation system, and fail-safe mecha
     shortTitle: 'Bumblebee Spaces Robotic Furniture',
     category: 'professional',
     description: 'Engineered ceiling-mounted robotic furniture systems that double usable floor space in urban apartments—designed for 10,000+ cycle life, silent operation, and residential safety certification.',
-    fullDescription: `Bumblebee Spaces built AI-controlled robotic furniture that stores beds, desks, closets, and storage modules in the ceiling and deploys them on command—effectively doubling usable floor space in urban apartments. Featured in Dezeen, TechCrunch, and backed by prominent Silicon Valley investors.
+    fullDescription: `Mechanical Engineer, responsible for robotic lift module design, systems integration, and safety architecture.
 
-Led mechanical design and systems integration for the robotic lift modules, including the structural frame, linear actuation system, cable management, and safety interlocks. Each module needed to support 200+ lbs of payload, operate near-silently (<40 dB), and survive 10,000+ deployment cycles in a residential environment where failure is not an option—these systems operate directly above people.
+Bumblebee Spaces builds AI-controlled robotic furniture that stores beds, desks, and closets in the ceiling and deploys them on command—doubling usable floor space in urban apartments.
 
-Developed the sensor suite and safety architecture, including load cells, limit switches, and obstruction detection systems that meet residential safety requirements. Collaborated closely with firmware and controls engineers to integrate mechanical systems with the AI-driven space management platform, enabling app-controlled deployment with FaceID authentication and real-time inventory tracking of stored objects.`,
+Backed by prominent Silicon Valley investors and featured in Dezeen, TechCrunch, and The Verge. The system uses ceiling-mounted robots with AI-driven inventory tracking, app-controlled deployment, and FaceID authentication. Each module supports 200+ lb payloads, operates at <40 dB, and is rated for 10,000+ cycles—engineered for residential environments where the hardware operates directly above people.`,
     highlights: [
-      'Designed robotic lift modules supporting 200+ lb payloads with <40 dB operation and 10,000+ cycle life',
-      'Engineered multi-layer safety architecture: load cells, obstruction detection, and mechanical interlocks',
-      'Integrated mechanical systems with AI-driven controls, app-based deployment, and FaceID authentication',
-      'Delivered production-ready hardware for real residential installations in San Francisco apartments'
+      'Designed robotic lift modules: structural frame, linear actuation, cable management, and safety interlocks',
+      'Engineered multi-layer safety system with load cells, obstruction detection, and mechanical fail-safes',
+      'Integrated mechanical systems with AI controls, app deployment, and FaceID-authenticated access',
+      'Delivered production-ready hardware installed in real San Francisco residential units'
     ],
     technologies: ['Robotics', 'Mechanical Design', 'Consumer Products', 'Safety Systems', 'Embedded Systems'],
     image: bumblebeeImg,
@@ -250,16 +252,16 @@ Developed the sensor suite and safety architecture, including load cells, limit 
     shortTitle: 'GreyOrange Warehouse Robot M',
     category: 'professional',
     description: 'Led complete mechanical architecture of the GreyOrange Butler AMR—a goods-to-person warehouse robot deployed across fulfillment centers globally for companies like IKEA and Flipkart.',
-    fullDescription: `Led the complete mechanical design of the GreyOrange Butler, an autonomous mobile robot (AMR) that became one of the most widely deployed goods-to-person warehouse automation platforms globally. GreyOrange systems are used by major retailers and logistics operators including IKEA, Flipkart, and XPO Logistics across fulfillment centers in Asia, Europe, and North America.
+    fullDescription: `Lead Mechanical Engineer, owning the complete mechanical architecture from blank-sheet concept through production tooling release.
 
-Owned the full mechanical architecture from blank-sheet concept through production release: chassis structure, drivetrain integration, payload interface, and rack-engagement mechanism. The Butler navigates autonomously under warehouse racking, lifts and transports mobile racks weighing up to 500 kg to human pick stations—eliminating the need for workers to walk miles through warehouse aisles.
+GreyOrange builds autonomous mobile robots (AMRs) for goods-to-person warehouse fulfillment and logistics automation.
 
-Executed rigorous structural optimization using FEA to balance payload capacity against weight and cost, achieving a platform light enough for efficient battery operation while rigid enough to maintain navigation accuracy under full load. Designed for high-volume manufacturing with sheet metal construction, modular subassemblies, and field-serviceable components. The architecture I developed became the foundation platform for multiple product variants and payload configurations.`,
+GreyOrange has raised $400M+, is planning a $600M US IPO, and deploys robots for IKEA, Flipkart, XPO Logistics, and other major fulfillment operators across Asia, Europe, and North America. The Butler AMR navigates autonomously under warehouse racking, lifts mobile racks weighing up to 500 kg, and transports them to human pick stations. I designed the chassis, drivetrain, payload interface, and rack-engagement mechanism—the architecture that became the foundation for the company's entire product family.`,
     highlights: [
-      'Owned end-to-end mechanical architecture of the Butler AMR—from concept through production tooling release',
-      'Platform deployed globally at IKEA, Flipkart, XPO Logistics, and other major fulfillment operators',
-      'Designed chassis, drivetrain, and rack-engagement system for 500 kg payload capacity',
-      'Optimized structure via FEA for weight, stiffness, and high-volume sheet metal manufacturing'
+      'Owned end-to-end mechanical architecture: chassis, drivetrain, payload interface, and rack-engagement system',
+      'Platform deployed at IKEA, Flipkart, XPO Logistics across global fulfillment centers',
+      'Optimized structure via FEA for 500 kg payload capacity with high-volume sheet metal manufacturing',
+      'Created foundation platform architecture that scaled into multiple product variants'
     ],
     technologies: ['Mechanical Design', 'Robotics', 'SolidWorks', 'FEA', 'DFM/DFA'],
     image: amrImg7,
@@ -274,16 +276,16 @@ Executed rigorous structural optimization using FEA to balance payload capacity 
     shortTitle: 'GreyOrange Warehouse Robot XL',
     category: 'professional',
     description: 'Architected the Butler XL heavy-payload variant—scaling the AMR platform from 500 kg to 1,000+ kg capacity while preserving maneuverability and fleet compatibility.',
-    fullDescription: `Promoted to Senior Mechanical Engineer to lead the design of the Butler XL, a heavy-duty variant of GreyOrange's autonomous mobile robot platform engineered for industrial-scale payloads exceeding 1,000 kg. The XL addressed demand from large 3PL and e-commerce fulfillment operators who needed to automate heavier rack configurations without sacrificing fleet density or navigation precision.
+    fullDescription: `Promoted to Senior Mechanical Engineer to lead the design of the heavy-payload Butler XL variant.
 
-Fundamentally re-architected the chassis, drivetrain, and power systems to handle double the payload of the standard Butler while maintaining compatibility with existing fleet management software and warehouse infrastructure. This required advanced structural analysis, redesigned drive modules with higher-torque motors, and an upgraded battery and thermal management system to sustain multi-shift operation under increased mechanical loads.
+The XL extends GreyOrange's AMR platform to handle industrial-scale payloads exceeding 1,000 kg for large 3PL and e-commerce fulfillment operators.
 
-Solved critical engineering trade-offs between payload capacity, turning radius, and floor loading—ensuring the XL could operate in the same aisle widths as the smaller platform. Designed for manufacturability at GreyOrange's production facility, using shared subassemblies with the standard Butler where possible to minimize supply chain complexity.`,
+GreyOrange needed to address demand from enterprise customers automating heavier rack configurations without sacrificing fleet density. I re-architected the chassis, drivetrain, and power systems to double payload capacity while maintaining the same aisle-width compatibility as the standard Butler. Redesigned drive modules with higher-torque motors and upgraded battery and thermal management for multi-shift operation. Maximized subassembly commonality with the standard platform to keep supply chain complexity low.`,
     highlights: [
-      'Architected heavy-payload AMR variant supporting 1,000+ kg—double the standard platform capacity',
-      'Redesigned drivetrain, power, and thermal systems for multi-shift industrial operation',
-      'Maintained same aisle-width compatibility as standard Butler for seamless fleet integration',
-      'Maximized manufacturing commonality with standard platform to reduce supply chain complexity'
+      'Architected heavy-payload variant: 1,000+ kg capacity—double the standard Butler platform',
+      'Redesigned drivetrain, power, and thermal systems for continuous multi-shift operation',
+      'Maintained same aisle-width compatibility for seamless integration with existing fleets',
+      'Maximized manufacturing commonality with standard platform to reduce supply chain cost'
     ],
     technologies: ['Heavy Robotics', 'Industrial Design', 'Structural Analysis', 'Power Systems', 'Thermal Management'],
     image: butlerXlImg7,
@@ -298,16 +300,16 @@ Solved critical engineering trade-offs between payload capacity, turning radius,
     shortTitle: 'Fiat Chrysler',
     category: 'professional',
     description: 'Two engineering roles at FCA: drove BIW assembly line automation from 27% to 65% efficiency for Jeep Compass production, and published CAE durability research at SAE World Congress 2016.',
-    fullDescription: `Held two engineering roles at Fiat Chrysler Automobiles (FCA) India, spanning manufacturing technology and CAE durability analysis across the company's most strategically important vehicle programs.
+    fullDescription: `Two roles at FCA India: Manufacturing Technologist in Body-in-White (BIW) and Engine divisions, and CAE Engineer in closure durability analysis.
 
-As Manufacturing Technologist, owned process optimization across Engine Manufacturing and Body-in-White (BIW) assembly divisions. Stood up a temporary BIW facility that achieved 300+ units/day output for Fiat Punto and Linea production. Led the automation strategy for the right-hand-drive Jeep Compass BIW line—a flagship program under FCA's "Made in India" initiative—driving build efficiency from 27% to 65% through robotic cell redesign, fixture optimization, and cycle time reduction. Also supported BIW process development for the Tata Nexon contract manufacturing line.
+Fiat Chrysler Automobiles (now Stellantis) is one of the world's largest automakers, producing vehicles across the Jeep, Fiat, Chrysler, Ram, and Maserati brands.
 
-As CAE Engineer, developed advanced finite element models for automotive closure durability (doors, hoods, tailgates), reducing computation time by 40% while improving correlation accuracy by 12%. Conducted structural analysis, NVH characterization, and fatigue life prediction using ANSYS and HyperMesh. Research on closure durability methodologies was presented at SAE World Congress 2016 and published in the SAE International Journal—a peer-reviewed venue for automotive engineering.`,
+FCA India's Ranjangaon plant was the centerpiece of the "Made in India" Jeep program—the first time a Jeep was manufactured in India. I led the BIW automation strategy for the right-hand-drive Jeep Compass line, driving build efficiency from 27% to 65%. Also stood up a temporary BIW facility producing 300+ Fiat Punto/Linea units per day. In my CAE role, I developed FEA models for closure durability that cut computation time 40% and improved accuracy 12%, publishing findings at SAE World Congress 2016 in the peer-reviewed SAE International Journal.`,
     highlights: [
-      'Drove BIW assembly automation from 27% to 65% efficiency for Jeep Compass "Made in India" program',
-      'Stood up temporary BIW facility achieving 300+ units/day for Fiat Punto/Linea production',
-      'Developed FEA models reducing computation time 40% and improving accuracy 12% for closure durability',
-      'Published research at SAE World Congress 2016 in the SAE International Journal (peer-reviewed)'
+      'Led BIW automation for Jeep Compass "Made in India" program—drove efficiency from 27% to 65%',
+      'Stood up temporary BIW facility producing 300+ vehicles/day for Fiat Punto/Linea',
+      'Developed FEA models cutting computation time 40% with 12% accuracy improvement',
+      'Published closure durability research at SAE World Congress 2016 (SAE International Journal)'
     ],
     technologies: ['Manufacturing Engineering', 'BIW Assembly', 'Robotics', 'ANSYS', 'HyperMesh', 'NVH Analysis', 'Process Optimization'],
     image: fiatImg5,
