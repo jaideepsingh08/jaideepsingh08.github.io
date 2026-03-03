@@ -108,7 +108,7 @@ export const projects: Project[] = [
     shortTitle: 'Sensory Labs Tactile Sensing',
     category: 'professional',
     description: 'Founded and led a deep-tech startup building multimodal tactile sensing hardware to give robots human-like touch perception for industrial and physical AI applications.',
-    fullDescription: `Founder & CTO, responsible for product vision, technical architecture, and company strategy.
+    fullDescription: `Founder & CTO as a Fellow at Menlo Ventures, responsible for product vision, technical architecture, and company strategy.
 
 Sensory Labs builds multimodal tactile sensing hardware that gives robots human-like touch perception for physical AI and industrial automation.
 
