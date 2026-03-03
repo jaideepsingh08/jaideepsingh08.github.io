@@ -112,14 +112,14 @@ export const projects: Project[] = [
 
 Sensory Labs builds multimodal tactile sensing hardware that gives robots human-like touch perception for physical AI and industrial automation.
 
-The physical AI space is experiencing rapid growth, with companies like Figure, 1X, and Sanctuary AI raising billions to build humanoid robots—but nearly all lack reliable tactile feedback. Sensory Labs was founded to fill that critical sensing gap, building hardware that fuses pressure, shear, thermal, and proximity data into a unified perception layer for robotic manipulation. The company targeted high-value applications in manufacturing QC, bin picking, and dexterous assembly, partnering with robotics integrators and research institutions.`,
+The physical AI space is experiencing rapid growth, with companies like Figure, 1X, and Sanctuary AI raising billions to build humanoid robots—but nearly all lack reliable tactile feedback. Sensory Labs was founded to fill that critical sensing gap, building hardware that fuses 300-point touch force arrays, ego and context video, audio, IMU, pose, proprioception, slip sensing, temperature, and texture detection into a unified perception layer for robotic manipulation. The company targeted high-value applications in manufacturing QC, bin picking, and dexterous assembly, partnering with robotics integrators and research institutions.`,
     highlights: [
       'Defined product roadmap, hired team, and led all mechanical and electrical prototyping',
-      'Architected multimodal sensor stack fusing pressure, shear, thermal, and proximity modalities',
+      'Architected multimodal sensor stack: 300-point force, video, audio, IMU, slip, temperature, and texture',
       'Secured early partnerships with robotics integrators and university research labs',
       'Managed MEMS fabrication vendor relationships and sensor module manufacturing'
     ],
-    technologies: ['Tactile Sensing', 'Physical AI', 'Multimodal Systems', 'Robotics', 'Hardware Prototyping'],
+    technologies: ['Tactile Sensing', 'Physical AI', 'Multimodal Systems', 'Robotics', 'Computer Vision', 'Hardware Prototyping'],
     image: sensoryLabsImg,
     gallery: [sensoryLabsImg, sensoryLabsImg2, sensoryLabsImg3, sensoryLabsImg4],
     year: '2024 - 2025',
