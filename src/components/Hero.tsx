@@ -6,6 +6,7 @@ import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
 import ziplineLogo from '@/assets/logos/zipline-logo.png';
 import millLogo from '@/assets/logos/mill-logo.png';
+import chryslerLogo from '@/assets/logos/chrysler-logo.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 const companyLogos = [
