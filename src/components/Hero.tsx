@@ -1,5 +1,5 @@
 import { ArrowDown } from 'lucide-react';
-import headshot from '@/assets/jaideep-headshot.png';
+import headshot from '@/assets/jaideep-headshot.jpg';
 import unitxLogo from '@/assets/logos/unitx-logo.jpg';
 import greyorangeLogo from '@/assets/logos/greyorange-logo.png';
 import fiatLogo from '@/assets/logos/fiat-logo.png';
