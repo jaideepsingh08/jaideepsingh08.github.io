@@ -6,13 +6,15 @@ import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
 import ziplineLogo from '@/assets/logos/zipline-logo.png';
 import millLogo from '@/assets/logos/mill-logo.png';
+import chryslerLogo from '@/assets/logos/chrysler-logo.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 const companyLogos = [
   { name: 'Mill', logo: millLogo },
   { name: 'Zipline', logo: ziplineLogo },
   { name: 'UnitX', logo: unitxLogo },
-  { name: 'Fiat Chrysler', logo: fiatLogo },
+  { name: 'Fiat', logo: fiatLogo },
+  { name: 'Chrysler', logo: chryslerLogo },
   { name: 'GreyOrange', logo: greyorangeLogo },
   { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
 ];
@@ -51,16 +53,25 @@ const Hero = () => {
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 md:mb-8 block">
               Previously Leading Teams At
             </span>
-            <div className="grid grid-cols-3 sm:grid-cols-6 gap-x-6 gap-y-8 items-center">
-              {companyLogos.map(company => (
-                <ProtectedImage
-                  key={company.name}
-                  src={company.logo}
-                  alt={company.name}
-                  className="h-10 md:h-12 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-                />
-              ))}
+            <div className="relative overflow-hidden group">
+              <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
+                {[...companyLogos, ...companyLogos].map((company, i) => (
+                  <div
+                    key={`${company.name}-${i}`}
+                    className="flex items-center justify-center shrink-0 w-40 md:w-56 px-4 md:px-8"
+                  >
+                    <ProtectedImage
+                      src={company.logo}
+                      alt={company.name}
+                      className="h-12 md:h-16 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent" />
             </div>
+
 
           </div>
         </header>
