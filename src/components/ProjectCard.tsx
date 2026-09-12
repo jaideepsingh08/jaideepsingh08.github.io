@@ -23,7 +23,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <ProtectedImage
             src={project.image}
             alt={project.title}
-            className="absolute inset-0 w-full h-full object-cover object-center grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
+            className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
           />
           <div className="absolute top-4 left-4">
             <span className="text-xs bg-foreground text-background px-2.5 py-1">
