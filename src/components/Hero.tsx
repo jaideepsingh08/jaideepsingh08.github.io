@@ -50,20 +50,20 @@ const Hero = () => {
 
           {/* Logos Section */}
           <div className="mt-20 md:mt-24 pt-8 border-t border-border animate-fade-up animation-delay-400">
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 md:mb-8 block">
-              Previously Leading Teams At
+            <span className="text-sm text-muted-foreground mb-6 md:mb-8 block">
+              Previously leading teams at
             </span>
             <div className="relative overflow-hidden group">
               <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
                 {[...companyLogos, ...companyLogos].map((company, i) => (
                   <div
                     key={`${company.name}-${i}`}
-                    className="flex items-center justify-center shrink-0 w-40 md:w-56 px-4 md:px-8"
+                    className="flex items-center justify-center shrink-0 w-64 md:w-96 px-6 md:px-12"
                   >
                     <ProtectedImage
                       src={company.logo}
                       alt={company.name}
-                      className="h-12 md:h-16 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                      className="h-24 md:h-32 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                     />
                   </div>
                 ))}

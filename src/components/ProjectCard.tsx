@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             className="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
           />
           <div className="absolute top-4 left-4">
-            <span className="font-mono text-[10px] uppercase tracking-widest bg-foreground text-background px-2.5 py-1">
+            <span className="text-xs bg-foreground text-background px-2.5 py-1">
               {String(index + 1).padStart(2, '0')} / {categoryLabels[project.category]}
             </span>
           </div>
