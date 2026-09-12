@@ -1,32 +1,22 @@
-import { Layers, Users, Zap, TrendingUp } from 'lucide-react';
 const About = () => {
-  const strengths = [{
-    icon: Layers,
-    title: 'Systems Engineering',
-    description: 'End-to-end hardware systems—mechanical, electrical, firmware—designed for reliability at scale.'
-  }, {
-    icon: Users,
-    title: 'Team Leadership',
-    description: 'Cross-functional teams from 0 to 1 and 1 to N. Hiring, culture, and execution.'
-  }, {
-    icon: Zap,
-    title: 'Product Certification',
-    description: 'Prototype to production. UL/FCC certification, manufacturing ramp, and market launch.'
-  }, {
-    icon: TrendingUp,
-    title: 'Startup Operations',
-    description: 'Founding engineer through Series C. Building engineering functions that support product and business growth.'
-  }];
-  return <section id="about" className="section-padding bg-stone-100 text-blue-900">
+  return (
+    <section id="about" className="section-padding bg-background border-t border-border">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-          {/* Left - Story */}
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
+          {/* Left - Heading */}
+          <div className="lg:col-span-4">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4 block">
               About
+            </span>
+            <h2 className="font-heading text-4xl md:text-5xl leading-[1.05] italic">
+              Builder of physical systems.
             </h2>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
+          </div>
+
+          {/* Right - Story */}
+          <div className="lg:col-span-8">
+            <div className="max-w-2xl space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-foreground font-medium text-lg md:text-xl">
                 I work at the intersection of mechanical, electrical, and software engineering in a range of industries.
               </p>
               <p>
@@ -36,32 +26,28 @@ const About = () => {
                 Background in Physics, Mechanical Engineering, and Hybrid Electric Vehicles.
               </p>
             </div>
-          </div>
 
-          {/* Right - Strengths */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {strengths.map((strength, index) => <div key={strength.title} className="p-6 border border-border rounded-lg bg-stone-200 text-blue-900">
-                <strength.icon className="w-8 h-8 text-primary mb-4" />
-                <h3 className="font-heading font-semibold text-lg mb-2">
-                  {strength.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {strength.description}
-                </p>
-              </div>)}
-          </div>
-        </div>
-
-        {/* Skills */}
-        <div className="mt-16 pt-16 border-t border-border">
-          <h3 className="font-heading font-semibold text-xl mb-6">Skills & Expertise</h3>
-          <div className="flex flex-wrap gap-3">
-            {['Technical Strategy', 'Team Scaling', 'Roadmap Planning', 'Stakeholder Management', 'Budget & Vendor Management', 'Robotics', 'Systems Architecture', 'Hardware Integration', 'Embedded Systems', 'Product Certification', 'Manufacturing', 'Cross-functional Leadership', 'Startup Building'].map(skill => <span key={skill} className="px-4 py-2 bg-secondary text-secondary-foreground text-sm rounded-full">
-                {skill}
-              </span>)}
+            <div className="mt-12 pt-8 border-t border-border">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
+                Capabilities
+              </span>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3 gap-x-8 text-sm text-muted-foreground">
+                <span>Systems Engineering</span>
+                <span>Team Leadership</span>
+                <span>Product Certification</span>
+                <span>Robotics</span>
+                <span>Manufacturing Ramp</span>
+                <span>Startup Operations</span>
+                <span>Hardware Integration</span>
+                <span>Embedded Systems</span>
+                <span>Cross-functional Leadership</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

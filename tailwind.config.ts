@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Space Grotesk', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Instrument Serif', 'Georgia', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['Roboto Mono', 'ui-monospace', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -74,17 +75,12 @@ export default {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
-        "slide-in-left": {
-          from: { opacity: "0", transform: "translateX(-20px)" },
-          to: { opacity: "1", transform: "translateX(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "slide-in-left": "slide-in-left 0.5s ease-out forwards",
       },
     },
   },
