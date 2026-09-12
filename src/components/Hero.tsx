@@ -58,12 +58,12 @@ const Hero = () => {
                 {[...companyLogos, ...companyLogos].map((company, i) => (
                   <div
                     key={`${company.name}-${i}`}
-                    className="flex items-center justify-center shrink-0 w-40 md:w-56 px-4 md:px-8"
+                    className="flex items-center justify-center shrink-0 w-64 md:w-96 px-6 md:px-12"
                   >
                     <ProtectedImage
                       src={company.logo}
                       alt={company.name}
-                      className="h-12 md:h-16 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                      className="h-24 md:h-32 w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                     />
                   </div>
                 ))}
