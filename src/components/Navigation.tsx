@@ -20,8 +20,7 @@ const Navigation = () => {
 
   const isActive = (path: string) => {
     if (path === '/') return location.pathname === '/';
-    if (path.startsWith('/#')) return location.pathname === '/';
-    return location.pathname === path;
+    return false;
   };
 
   return (
@@ -39,10 +38,10 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className={`px-4 py-2 text-sm border border-border rounded-full transition-colors ${
+                className={`px-4 py-2 text-sm border rounded-full transition-colors ${
                   isActive(link.path)
-                    ? 'bg-foreground text-background border-foreground'
-                    : 'bg-background text-foreground hover:bg-muted'
+                    ? 'border-foreground text-foreground bg-background'
+                    : 'border-border text-foreground hover:border-foreground hover:bg-muted'
                 }`}
               >
                 {link.name}
