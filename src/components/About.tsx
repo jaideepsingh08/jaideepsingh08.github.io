@@ -28,9 +28,9 @@ const About = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-border">
-              <span className="text-sm text-muted-foreground mb-6 block">
+              <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-7">
                 Capabilities
-              </span>
+              </h3>
               <div className="flex flex-wrap gap-3">
                 {[
                   'Systems Engineering',
