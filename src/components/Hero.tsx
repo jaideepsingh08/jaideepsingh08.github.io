@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
 
             <div className="animate-fade-up animation-delay-300 flex justify-center lg:justify-end">
-              <div className="w-56 h-72 md:w-64 md:h-[22rem] border border-border rounded-[1rem] overflow-hidden relative bg-muted">
+              <div className="w-[17.5rem] h-[22.5rem] md:w-80 md:h-[27.5rem] border border-border rounded-[1rem] overflow-hidden relative bg-muted">
                 <ProtectedImage
                   src={headshot}
                   alt="Jaideep Singh"
