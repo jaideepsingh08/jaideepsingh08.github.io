@@ -1,6 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import headshot from '@/assets/jaideep-headshot.jpg';
-import unitxLogo from '@/assets/logos/unitx-logo.jpg';
+import unitxLogo from '@/assets/logos/unitx-logo.png';
 import greyorangeLogo from '@/assets/logos/greyorange-logo.png';
 import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
@@ -9,13 +9,14 @@ import millLogo from '@/assets/logos/mill-logo.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 const companyLogos = [
-  { name: 'Mill', logo: millLogo, height: 'h-7' },
-  { name: 'Zipline', logo: ziplineLogo, height: 'h-7' },
-  { name: 'UnitX', logo: unitxLogo, height: 'h-10' },
-  { name: 'Fiat Chrysler', logo: fiatLogo, height: 'h-7' },
-  { name: 'GreyOrange', logo: greyorangeLogo, height: 'h-8' },
-  { name: 'Bumblebee Spaces', logo: bumblebeeLogo, height: 'h-10' },
+  { name: 'Mill', logo: millLogo },
+  { name: 'Zipline', logo: ziplineLogo },
+  { name: 'UnitX', logo: unitxLogo },
+  { name: 'Fiat Chrysler', logo: fiatLogo },
+  { name: 'GreyOrange', logo: greyorangeLogo },
+  { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
 ];
+
 
 const Hero = () => {
   return (
@@ -34,13 +35,14 @@ const Hero = () => {
             </div>
 
             <div className="animate-fade-up animation-delay-300 flex justify-center lg:justify-end">
-              <div className="w-52 h-72 md:w-56 md:h-80 border border-border overflow-hidden relative bg-muted">
+              <div className="w-56 h-72 md:w-64 md:h-[22rem] border border-border overflow-hidden relative bg-muted">
                 <ProtectedImage
                   src={headshot}
                   alt="Jaideep Singh"
-                  className="w-full h-full object-cover object-[center_25%] grayscale contrast-110"
+                  className="w-full h-full object-cover object-[center_22%] saturate-[0.9]"
                 />
               </div>
+
             </div>
           </div>
 
@@ -49,16 +51,17 @@ const Hero = () => {
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 md:mb-8 block">
               Previously Leading Teams At
             </span>
-            <div className="flex flex-wrap items-center gap-x-10 md:gap-x-16 gap-y-6 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-x-6 gap-y-8 items-center">
               {companyLogos.map(company => (
                 <ProtectedImage
                   key={company.name}
                   src={company.logo}
                   alt={company.name}
-                  className={`${company.height} w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300`}
+                  className="h-9 md:h-11 w-full object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
                 />
               ))}
             </div>
+
           </div>
         </header>
       </div>

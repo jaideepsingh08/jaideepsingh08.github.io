@@ -1,5 +1,5 @@
 // Import project images
-import unitxLogo from '@/assets/logos/unitx-logo.jpg';
+import unitxLogo from '@/assets/logos/unitx-logo.png';
 import sensoryLabsImg from '@/assets/projects/sensory-labs.png';
 import sensoryLabsImg2 from '@/assets/projects/sensory-labs-2.png';
 import sensoryLabsImg3 from '@/assets/projects/sensory-labs-3.png';
