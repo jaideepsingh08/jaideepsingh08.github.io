@@ -18,29 +18,15 @@ const ProjectsGrid = () => {
       ? visibleProjects
       : visibleProjects.filter(p => p.category === activeFilter);
 
-  // Find actual year span across all visible projects
-  const allYears = visibleProjects.flatMap(p =>
-    p.year ? p.year.split(/\s*-\s*/).map(y => parseInt(y.trim(), 10)).filter(Boolean) : []
-  );
-  const yearRange =
-    allYears.length > 0
-      ? `${Math.min(...allYears)} — ${Math.max(...allYears)}`
-      : '';
-
   return (
     <section id="work" className="section-padding bg-background border-t border-border">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-12 md:mb-16 pb-4 border-b border-foreground">
-          <div>
-            <span className="text-sm text-muted-foreground mb-3 block">
-              Portfolio
-            </span>
-            <h2 className="font-heading text-3xl md:text-4xl italic">Selected Works</h2>
-          </div>
-          <span className="text-sm text-muted-foreground mt-4 md:mt-0">
-            {yearRange}
+        <div className="mb-12 md:mb-16 pb-4 border-b border-foreground">
+          <span className="text-sm text-muted-foreground mb-3 block">
+            Portfolio
           </span>
+          <h2 className="font-heading text-3xl md:text-4xl italic">Selected Works</h2>
         </div>
 
         {/* Filters */}
