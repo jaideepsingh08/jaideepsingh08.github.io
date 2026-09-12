@@ -60,7 +60,7 @@ const Hero = () => {
                     key={`${company.name}-${i}`}
                     src={company.logo}
                     alt={company.name}
-                    className="shrink-0 h-7 md:h-10 w-auto max-w-[110px] md:max-w-[150px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    className="shrink-0 h-7 md:h-10 w-auto max-w-[130px] md:max-w-[185px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                   />
                 ))}
               </div>
