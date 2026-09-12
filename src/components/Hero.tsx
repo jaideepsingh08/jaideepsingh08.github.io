@@ -53,7 +53,7 @@ const Hero = () => {
             <span className="text-sm text-muted-foreground mb-6 md:mb-8 block">
               Previously leading teams at
             </span>
-            <div className="relative overflow-hidden group">
+            <div className="relative overflow-hidden group py-2">
               <div className="flex w-max items-center gap-14 md:gap-20 pr-14 md:pr-20 animate-marquee group-hover:[animation-play-state:paused]">
                 {[...companyLogos, ...companyLogos].map((company, i) => (
                   <ProtectedImage
