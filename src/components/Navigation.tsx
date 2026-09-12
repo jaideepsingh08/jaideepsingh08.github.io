@@ -33,15 +33,15 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map(link => (
               <a
                 key={link.name}
                 href={link.path}
-                className={`px-4 py-2 text-sm border rounded-full transition-colors ${
+                className={`relative text-base font-medium tracking-wide transition-colors pb-1 ${
                   isActive(link.path)
-                    ? 'border-foreground text-foreground bg-background'
-                    : 'border-border text-foreground hover:border-foreground hover:bg-muted'
+                    ? 'text-foreground after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-foreground'
+                    : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {link.name}
