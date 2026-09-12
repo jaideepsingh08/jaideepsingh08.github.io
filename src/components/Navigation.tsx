@@ -38,9 +38,9 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className={`relative text-lg font-semibold tracking-tight transition-colors pb-1 ${
+                className={`relative font-heading italic text-xl tracking-tight transition-colors pb-1 ${
                   isActive(link.path)
-                    ? 'text-foreground after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2.5px] after:bg-foreground'
+                    ? 'text-foreground after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-foreground'
                     : 'text-foreground/60 hover:text-foreground'
                 }`}
               >
