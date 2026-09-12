@@ -90,7 +90,7 @@ const Hero = () => {
               <ProtectedImage 
                 src={headshotAsset.url} 
                 alt="Jaideep Singh" 
-                className="w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-[22rem] rounded-2xl object-cover object-center shadow-2xl"
+                className="w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-[22rem] rounded-2xl object-cover object-[center_35%] shadow-2xl"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5" />
             </div>
