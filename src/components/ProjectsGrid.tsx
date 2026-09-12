@@ -28,12 +28,12 @@ const ProjectsGrid = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-12 md:mb-16 pb-4 border-b border-foreground">
           <div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3 block">
+            <span className="text-sm text-muted-foreground mb-3 block">
               Portfolio
             </span>
             <h2 className="font-heading text-3xl md:text-4xl italic">Selected Works</h2>
           </div>
-          <span className="font-mono text-xs text-muted-foreground uppercase mt-4 md:mt-0">
+          <span className="text-sm text-muted-foreground mt-4 md:mt-0">
             {yearRange}
           </span>
         </div>
@@ -44,7 +44,7 @@ const ProjectsGrid = () => {
             <button
               key={filter.value}
               onClick={() => setActiveFilter(filter.value)}
-              className={`px-4 py-2 font-mono text-[10px] uppercase tracking-widest border transition-colors ${
+              className={`px-4 py-2 text-sm border transition-colors ${
                 activeFilter === filter.value
                   ? 'bg-foreground text-background border-foreground'
                   : 'bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground'

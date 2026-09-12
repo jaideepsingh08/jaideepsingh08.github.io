@@ -5,7 +5,7 @@ const About = () => {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left - Heading */}
           <div className="lg:col-span-4">
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4 block">
+            <span className="text-sm text-muted-foreground mb-4 block">
               About
             </span>
             <h2 className="font-heading text-4xl md:text-5xl leading-[1.05] italic">
@@ -28,7 +28,7 @@ const About = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-border">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
+              <span className="text-sm text-muted-foreground mb-6 block">
                 Capabilities
               </span>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3 gap-x-8 text-sm text-muted-foreground">

@@ -39,7 +39,7 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className={`font-mono text-xs uppercase tracking-widest transition-colors ${
+                className={`text-sm transition-colors ${
                   isActive(link.path) ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -83,7 +83,7 @@ const Navigation = () => {
                   key={link.name}
                   href={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="block font-mono text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
+                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {link.name}
                 </a>

@@ -57,7 +57,7 @@ const ProjectDetail = () => {
             {/* Back Link */}
             <Link
               to="/#work"
-              className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors mb-10"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-10"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Work
@@ -66,7 +66,7 @@ const ProjectDetail = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-end">
               {/* Left - Info */}
               <div>
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4 block">
+                <span className="text-sm text-muted-foreground mb-4 block">
                   {project.category}
                 </span>
 
@@ -79,7 +79,7 @@ const ProjectDetail = () => {
                 </p>
 
                 {/* Meta */}
-                <div className="flex flex-wrap gap-6 text-sm text-muted-foreground font-mono text-[10px] uppercase tracking-widest">
+                <div className="flex flex-wrap gap-6 text-sm text-muted-foreground text-sm">
                   {project.year && (
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
@@ -147,7 +147,7 @@ const ProjectDetail = () => {
                 <div className="sticky top-28">
                   {/* Technologies */}
                   <div className="p-6 border border-border bg-muted mb-6">
-                    <h3 className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4 block">
+                    <h3 className="text-sm text-muted-foreground mb-4 block">
                       Technologies
                     </h3>
                     <div className="flex flex-wrap gap-2">

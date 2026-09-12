@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-6">
-            <div className="flex gap-8 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <div className="flex gap-8 text-sm text-muted-foreground">
               <a
                 href="https://www.linkedin.com/in/jaideepsingh08/"
                 target="_blank"
@@ -45,10 +45,10 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Jaideep Singh. All rights reserved.
           </p>
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Hardware · Robotics · Manufacturing
           </p>
         </div>
