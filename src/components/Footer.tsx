@@ -1,44 +1,60 @@
 import { Mail, Linkedin, MapPin } from 'lucide-react';
+
 const Footer = () => {
-  return <footer id="contact" className="section-padding border-t border-border bg-stone-100 text-blue-950">
+  return (
+    <footer id="contact" className="section-padding bg-background border-t border-border">
       <div className="container-custom">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Let's Build Something
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            Always down to dig into hard problems, sketch out ideas, 
-            or connect with fellow builders.
-          </p>
-
-          {/* Contact Link */}
-          <a href="mailto:jaideepsingh08@gmail.com" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-full hover:opacity-90 transition-opacity mb-12">
-            <Mail className="w-5 h-5" />
-            jaideepsingh08@gmail.com
-          </a>
-
-          {/* Social Links */}
-          <div className="flex items-center justify-center gap-6 mb-8">
-            <a href="https://www.linkedin.com/in/jaideepsingh08/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-              <Linkedin className="w-5 h-5" />
-              <span className="text-sm">LinkedIn</span>
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-20 mb-20">
+          <div className="max-w-xl">
+            <h2 className="font-heading text-4xl md:text-5xl italic mb-6">
+              Let's build the next machine.
+            </h2>
+            <a
+              href="mailto:jaideepsingh08@gmail.com"
+              className="text-lg md:text-xl border-b border-foreground pb-1 hover:text-muted-foreground hover:border-muted-foreground transition-colors"
+            >
+              jaideepsingh08@gmail.com
             </a>
           </div>
 
-          {/* Location */}
-          <div className="flex items-center justify-center gap-2 text-muted-foreground text-sm">
-            <MapPin className="w-4 h-4" />
-            <span>San Francisco Bay Area, California</span>
+          <div className="flex flex-col items-start lg:items-end gap-6">
+            <div className="flex gap-8 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              <a
+                href="https://www.linkedin.com/in/jaideepsingh08/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+              <a
+                href="mailto:jaideepsingh08@gmail.com"
+                className="hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Mail className="w-4 h-4" />
+                Email
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              <MapPin className="w-4 h-4" />
+              <span>San Francisco Bay Area</span>
+            </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="mt-16 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Jaideep Singh Chavan. All rights reserved.
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+            © {new Date().getFullYear()} Jaideep Singh. All rights reserved.
+          </p>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+            Hardware · Robotics · Manufacturing
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

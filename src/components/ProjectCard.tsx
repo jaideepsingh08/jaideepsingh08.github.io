@@ -2,59 +2,60 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { Project } from '@/data/projects';
 import ProtectedImage from '@/components/ProtectedImage';
+
 interface ProjectCardProps {
   project: Project;
   index: number;
 }
-const ProjectCard = ({
-  project,
-  index
-}: ProjectCardProps) => {
-  const categoryColors: Record<string, string> = {
-    professional: 'bg-primary/10 text-primary border-primary/20',
-    academic: 'bg-accent/10 text-accent border-accent/20',
-    personal: 'bg-muted text-muted-foreground border-border'
-  };
-  return <Link to={`/project/${project.id}`} className="group block" style={{
-    animationDelay: `${index * 100}ms`
-  }}>
-      <article className="relative border border-border rounded-lg overflow-hidden card-hover h-full bg-stone-200">
+
+const categoryLabels: Record<string, string> = {
+  professional: 'Professional',
+  academic: 'Academic',
+  personal: 'Personal',
+};
+
+const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const isOffset = index % 2 === 1;
+
+  return (
+    <Link to={`/project/${project.id}`} className={`group block ${isOffset ? 'md:mt-16' : ''}`}>
+      <article className="relative">
         {/* Image */}
-        <div className="aspect-[4/3] bg-secondary overflow-hidden">
-          <ProtectedImage src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div className="aspect-[4/5] bg-muted overflow-hidden relative mb-6 border border-border">
+          <ProtectedImage
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
+          />
+          <div className="absolute top-4 left-4">
+            <span className="font-mono text-[10px] uppercase tracking-widest bg-foreground text-background px-2.5 py-1">
+              {String(index + 1).padStart(2, '0')} / {categoryLabels[project.category]}
+            </span>
+          </div>
         </div>
 
         {/* Content */}
-        <div className="p-5 md:p-6 bg-stone-200 text-blue-900">
-          {/* Category Badge */}
-          <div className="flex items-center justify-between mb-3">
-            <span className={`text-xs font-medium px-2.5 py-1 rounded-full border ${categoryColors[project.category]}`}>
-              {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
-            </span>
-            <span className="text-xs text-muted-foreground">{project.year}</span>
+        <div className="flex justify-between items-start gap-4">
+          <div>
+            <h3 className="font-heading text-xl md:text-2xl mb-2 group-hover:italic transition-all">
+              {project.shortTitle}
+            </h3>
+            <p className="text-sm text-muted-foreground line-clamp-2 max-w-sm leading-relaxed">
+              {project.description}
+            </p>
           </div>
+          <span className="font-mono text-xs text-muted-foreground mt-1 shrink-0">
+            {project.year}
+          </span>
+        </div>
 
-          {/* Title */}
-          <h3 className="font-heading font-semibold text-lg mb-2 group-hover:text-primary transition-colors line-clamp-2">
-            {project.shortTitle}
-          </h3>
-
-          {/* Description */}
-          <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-            {project.description}
-          </p>
-
-          {/* Company if exists */}
-          {project.company && <p className="text-xs text-muted-foreground">
-              {project.company}
-            </p>}
-
-          {/* Arrow */}
-          <div className="absolute bottom-5 right-5 md:bottom-6 md:right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-            <ArrowUpRight className="w-5 h-5 text-primary" />
-          </div>
+        {/* Arrow */}
+        <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+          <ArrowUpRight className="w-5 h-5 text-foreground" />
         </div>
       </article>
-    </Link>;
+    </Link>
+  );
 };
+
 export default ProjectCard;

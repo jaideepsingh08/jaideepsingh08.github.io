@@ -1,51 +1,69 @@
 import { useState } from 'react';
 import { projects, ProjectCategory } from '@/data/projects';
 import ProjectCard from './ProjectCard';
+
 const ProjectsGrid = () => {
   const [activeFilter, setActiveFilter] = useState<'all' | ProjectCategory>('all');
-  const filters: {
-    label: string;
-    value: 'all' | ProjectCategory;
-  }[] = [{
-    label: 'All',
-    value: 'all'
-  }, {
-    label: 'Professional',
-    value: 'professional'
-  }, {
-    label: 'Academic',
-    value: 'academic'
-  }, {
-    label: 'Personal',
-    value: 'personal'
-  }];
+
+  const filters: { label: string; value: 'all' | ProjectCategory }[] = [
+    { label: 'All', value: 'all' },
+    { label: 'Professional', value: 'professional' },
+    { label: 'Academic', value: 'academic' },
+    { label: 'Personal', value: 'personal' },
+  ];
+
   const visibleProjects = projects.filter(p => !p.hidden);
-  const filteredProjects = activeFilter === 'all' ? visibleProjects : visibleProjects.filter(p => p.category === activeFilter);
-  return <section id="work" className="section-padding bg-stone-100 text-blue-900">
+  const filteredProjects =
+    activeFilter === 'all'
+      ? visibleProjects
+      : visibleProjects.filter(p => p.category === activeFilter);
+
+  // Find year range
+  const years = visibleProjects.map(p => p.year).filter(Boolean);
+  const yearRange = years.length ? `${years[years.length - 1]} — ${years[0]}` : '';
+
+  return (
+    <section id="work" className="section-padding bg-background border-t border-border">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="max-w-2xl mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Selected Work
-          </h2>
-          <p className="text-muted-foreground">
-            From robotic systems to consumer products, here is a selection of projects 
-            where I have led hardware engineering and brought complex technology to market.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-12 md:mb-16 pb-4 border-b border-foreground">
+          <div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3 block">
+              Portfolio
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl italic">Selected Works</h2>
+          </div>
+          <span className="font-mono text-xs text-muted-foreground uppercase mt-4 md:mt-0">
+            {yearRange}
+          </span>
         </div>
 
         {/* Filters */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          {filters.map(filter => <button key={filter.value} onClick={() => setActiveFilter(filter.value)} className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${activeFilter === filter.value ? 'bg-primary text-primary-foreground' : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'}`}>
+        <div className="flex flex-wrap gap-3 mb-12 md:mb-16">
+          {filters.map(filter => (
+            <button
+              key={filter.value}
+              onClick={() => setActiveFilter(filter.value)}
+              className={`px-4 py-2 font-mono text-[10px] uppercase tracking-widest border transition-colors ${
+                activeFilter === filter.value
+                  ? 'bg-foreground text-background border-foreground'
+                  : 'bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground'
+              }`}
+            >
               {filter.label}
-            </button>)}
+            </button>
+          ))}
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredProjects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-16 md:gap-y-24">
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ProjectsGrid;
