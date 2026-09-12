@@ -28,20 +28,20 @@ const Navigation = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="font-heading text-xl md:text-2xl tracking-tight text-foreground">
+          <Link to="/" className="font-heading text-2xl md:text-3xl tracking-tight text-foreground">
             Jaideep Singh
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map(link => (
               <a
                 key={link.name}
                 href={link.path}
-                className={`relative text-base font-medium tracking-wide transition-colors pb-1 ${
+                className={`relative font-heading italic text-xl tracking-tight transition-colors pb-1 ${
                   isActive(link.path)
                     ? 'text-foreground after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-foreground'
-                    : 'text-muted-foreground hover:text-foreground'
+                    : 'text-foreground/60 hover:text-foreground'
                 }`}
               >
                 {link.name}
