@@ -18,9 +18,14 @@ const ProjectsGrid = () => {
       ? visibleProjects
       : visibleProjects.filter(p => p.category === activeFilter);
 
-  // Find year range
-  const years = visibleProjects.map(p => p.year).filter(Boolean);
-  const yearRange = years.length ? `${years[years.length - 1]} — ${years[0]}` : '';
+  // Find actual year span across all visible projects
+  const allYears = visibleProjects.flatMap(p =>
+    p.year ? p.year.split(/\s*-\s*/).map(y => parseInt(y.trim(), 10)).filter(Boolean) : []
+  );
+  const yearRange =
+    allYears.length > 0
+      ? `${Math.min(...allYears)} — ${Math.max(...allYears)}`
+      : '';
 
   return (
     <section id="work" className="section-padding bg-background border-t border-border">
