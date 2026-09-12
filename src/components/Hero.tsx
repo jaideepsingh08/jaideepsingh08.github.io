@@ -5,7 +5,7 @@ import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
 import ziplineLogo from '@/assets/logos/zipline-logo.png';
 import millLogo from '@/assets/logos/mill-logo.png';
-import headshotAsset from '@/assets/jaideep-headshot.png.asset.json';
+import headshot from '@/assets/jaideep-headshot.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 // Company logos data - with height adjustments for smaller logos
