@@ -15,17 +15,15 @@ const categoryLabels: Record<string, string> = {
 };
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
-  const isOffset = index % 2 === 1;
-
   return (
-    <Link to={`/project/${project.id}`} className={`group block ${isOffset ? 'md:mt-16' : ''}`}>
-      <article className="relative">
+    <Link to={`/project/${project.id}`} className="group block h-full">
+      <article className="relative flex h-full flex-col">
         {/* Image */}
-        <div className="aspect-[4/5] bg-muted overflow-hidden relative mb-6 border border-border">
+        <div className="aspect-[4/3] w-full bg-muted overflow-hidden relative mb-6 border border-border rounded-lg">
           <ProtectedImage
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
+            className="absolute inset-0 w-full h-full object-cover object-center grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
           />
           <div className="absolute top-4 left-4">
             <span className="text-xs bg-foreground text-background px-2.5 py-1">
@@ -35,12 +33,12 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
 
         {/* Content */}
-        <div className="flex justify-between items-start gap-4">
+        <div className="flex justify-between items-start gap-4 flex-1">
           <div>
             <h3 className="font-heading text-xl md:text-2xl mb-2 group-hover:italic transition-all">
               {project.shortTitle}
             </h3>
-            <p className="text-sm text-muted-foreground line-clamp-2 max-w-sm leading-relaxed">
+            <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
               {project.description}
             </p>
           </div>
