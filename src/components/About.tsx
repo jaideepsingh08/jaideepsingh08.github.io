@@ -28,40 +28,28 @@ const About = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-border">
-              <span className="text-sm text-muted-foreground mb-8 block">
+              <span className="text-sm text-muted-foreground mb-6 block">
                 Capabilities
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10">
-                <div>
-                  <h3 className="text-sm font-medium text-foreground mb-3">
-                    Build
-                  </h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>Systems Engineering</li>
-                    <li>Robotics</li>
-                    <li>Hardware Integration</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-foreground mb-3">
-                    Ship
-                  </h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>Product Certification</li>
-                    <li>Manufacturing Ramp</li>
-                    <li>Embedded Systems</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-foreground mb-3">
-                    Lead
-                  </h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>Team Leadership</li>
-                    <li>Startup Operations</li>
-                    <li>Cross-functional Leadership</li>
-                  </ul>
-                </div>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  'Systems Engineering',
+                  'Team Leadership',
+                  'Product Certification',
+                  'Robotics',
+                  'Manufacturing Ramp',
+                  'Startup Operations',
+                  'Hardware Integration',
+                  'Embedded Systems',
+                  'Cross-functional Leadership',
+                ].map((cap) => (
+                  <span
+                    key={cap}
+                    className="px-4 py-2 text-sm text-foreground border border-border rounded-full bg-background"
+                  >
+                    {cap}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
