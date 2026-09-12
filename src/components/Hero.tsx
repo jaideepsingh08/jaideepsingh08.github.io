@@ -1,6 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import headshot from '@/assets/jaideep-headshot.jpg';
-import unitxLogo from '@/assets/logos/unitx-logo.jpg';
+import unitxLogo from '@/assets/logos/unitx-logo.png';
 import greyorangeLogo from '@/assets/logos/greyorange-logo.png';
 import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
@@ -9,13 +9,14 @@ import millLogo from '@/assets/logos/mill-logo.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 const companyLogos = [
-  { name: 'Mill', logo: millLogo, height: 'h-7' },
-  { name: 'Zipline', logo: ziplineLogo, height: 'h-7' },
-  { name: 'UnitX', logo: unitxLogo, height: 'h-10' },
-  { name: 'Fiat Chrysler', logo: fiatLogo, height: 'h-7' },
-  { name: 'GreyOrange', logo: greyorangeLogo, height: 'h-8' },
-  { name: 'Bumblebee Spaces', logo: bumblebeeLogo, height: 'h-10' },
+  { name: 'Mill', logo: millLogo },
+  { name: 'Zipline', logo: ziplineLogo },
+  { name: 'UnitX', logo: unitxLogo },
+  { name: 'Fiat Chrysler', logo: fiatLogo },
+  { name: 'GreyOrange', logo: greyorangeLogo },
+  { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
 ];
+
 
 const Hero = () => {
   return (
