@@ -34,13 +34,15 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-3">
             {navLinks.map(link => (
               <a
                 key={link.name}
                 href={link.path}
-                className={`text-sm transition-colors ${
-                  isActive(link.path) ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+                className={`px-4 py-2 text-sm border border-border rounded-full transition-colors ${
+                  isActive(link.path)
+                    ? 'bg-foreground text-background border-foreground'
+                    : 'bg-background text-foreground hover:bg-muted'
                 }`}
               >
                 {link.name}
