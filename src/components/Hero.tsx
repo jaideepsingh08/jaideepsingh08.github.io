@@ -50,8 +50,8 @@ const Hero = () => {
 
           {/* Logos Section */}
           <div className="mt-20 md:mt-24 pt-8 border-t border-border animate-fade-up animation-delay-400">
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 md:mb-8 block">
-              Previously Leading Teams At
+            <span className="text-sm text-muted-foreground mb-6 md:mb-8 block">
+              Previously leading teams at
             </span>
             <div className="relative overflow-hidden group">
               <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
