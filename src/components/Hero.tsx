@@ -54,13 +54,13 @@ const Hero = () => {
               Previously leading teams at
             </span>
             <div className="relative overflow-hidden group py-2">
-              <div className="flex w-max items-center gap-14 md:gap-20 pr-14 md:pr-20 animate-marquee group-hover:[animation-play-state:paused]">
+              <div className="flex w-max items-center gap-10 md:gap-14 pr-10 md:pr-14 animate-marquee group-hover:[animation-play-state:paused]">
                 {[...companyLogos, ...companyLogos].map((company, i) => (
                   <ProtectedImage
                     key={`${company.name}-${i}`}
                     src={company.logo}
                     alt={company.name}
-                    className="shrink-0 h-14 md:h-20 w-auto max-w-[220px] md:max-w-[300px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    className="shrink-0 h-7 md:h-10 w-auto max-w-[130px] md:max-w-[185px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                   />
                 ))}
               </div>
