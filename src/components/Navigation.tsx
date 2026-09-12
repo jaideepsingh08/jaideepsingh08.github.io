@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin, Mail } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Work', path: '/#work' },
-    { name: 'About', path: '/#about' },
-    { name: 'Contact', path: '/#contact' },
+    { name: 'Home', path: '/#home', section: 'home' },
+    { name: 'About', path: '/#about', section: 'about' },
+    { name: 'Work', path: '/#work', section: 'work' },
+    { name: 'Contact', path: '/#contact', section: 'contact' },
   ];
 
   const socialLinks = [
@@ -18,10 +19,39 @@ const Navigation = () => {
     { icon: Mail, href: 'mailto:jaideepsingh08@gmail.com', label: 'Email' },
   ];
 
-  const isActive = (path: string) => {
-    if (path === '/') return location.pathname === '/';
-    return false;
-  };
+  useEffect(() => {
+    if (location.pathname !== '/') return;
+
+    const updateActiveSection = () => {
+      const sectionIds = navLinks.map(link => link.section);
+      const atPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+
+      if (atPageBottom) {
+        setActiveSection('contact');
+        return;
+      }
+
+      const current = sectionIds.reduce((active, sectionId) => {
+        const section = document.getElementById(sectionId);
+        return section && section.getBoundingClientRect().top <= window.innerHeight * 0.35
+          ? sectionId
+          : active;
+      }, 'home');
+
+      setActiveSection(current);
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
+    };
+  }, [location.pathname]);
+
+  const isActive = (section: string) => location.pathname === '/' && activeSection === section;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -39,7 +69,7 @@ const Navigation = () => {
                 key={link.name}
                 href={link.path}
                 className={`relative font-heading italic text-xl tracking-tight transition-colors pb-1 ${
-                  isActive(link.path)
+                  isActive(link.section)
                     ? 'text-foreground after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-foreground'
                     : 'text-foreground/60 hover:text-foreground'
                 }`}
@@ -84,7 +114,11 @@ const Navigation = () => {
                   key={link.name}
                   href={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className={`block font-heading italic text-xl transition-colors ${
+                    isActive(link.section)
+                      ? 'text-foreground underline decoration-2 underline-offset-4'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
                 >
                   {link.name}
                 </a>
