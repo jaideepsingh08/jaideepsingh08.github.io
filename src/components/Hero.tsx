@@ -41,7 +41,7 @@ const Hero = () => {
                 <ProtectedImage
                   src={headshot}
                   alt="Jaideep Singh"
-                  className="w-full h-full object-cover object-[center_22%] saturate-[0.9]"
+                  className="w-full h-full object-cover object-[center_22%]"
                 />
               </div>
 
