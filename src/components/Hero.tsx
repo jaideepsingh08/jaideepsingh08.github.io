@@ -13,7 +13,8 @@ const companyLogos = [
   { name: 'Mill', logo: millLogo },
   { name: 'Zipline', logo: ziplineLogo },
   { name: 'UnitX', logo: unitxLogo },
-  { name: 'Fiat Chrysler', logo: fiatLogo },
+  { name: 'Fiat', logo: fiatLogo },
+  { name: 'Chrysler', logo: chryslerLogo },
   { name: 'GreyOrange', logo: greyorangeLogo },
   { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
 ];
