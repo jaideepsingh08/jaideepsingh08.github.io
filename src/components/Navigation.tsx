@@ -20,8 +20,7 @@ const Navigation = () => {
 
   const isActive = (path: string) => {
     if (path === '/') return location.pathname === '/';
-    if (path.startsWith('/#')) return location.pathname === '/';
-    return location.pathname === path;
+    return false;
   };
 
   return (
@@ -34,13 +33,15 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-3">
             {navLinks.map(link => (
               <a
                 key={link.name}
                 href={link.path}
-                className={`text-sm transition-colors ${
-                  isActive(link.path) ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+                className={`px-4 py-2 text-sm border rounded-full transition-colors ${
+                  isActive(link.path)
+                    ? 'border-foreground text-foreground bg-background'
+                    : 'border-border text-foreground hover:border-foreground hover:bg-muted'
                 }`}
               >
                 {link.name}
