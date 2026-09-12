@@ -54,7 +54,7 @@ const Hero = () => {
               Previously leading teams at
             </span>
             <div className="relative overflow-hidden group py-2">
-              <div className="flex w-max items-center gap-[60px] md:gap-[84px] pr-[60px] md:pr-[84px] animate-marquee group-hover:[animation-play-state:paused]">
+              <div className="flex w-max items-center gap-[90px] md:gap-[126px] pr-[90px] md:pr-[126px] animate-marquee group-hover:[animation-play-state:paused]">
                 {[...companyLogos, ...companyLogos].map((company, i) => (
                   <ProtectedImage
                     key={`${company.name}-${i}`}
