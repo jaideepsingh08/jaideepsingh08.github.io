@@ -25,9 +25,6 @@ const Hero = () => {
         <header className="mb-24 md:mb-32">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 lg:gap-16">
             <div className="max-w-2xl">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-6 block animate-fade-up">
-                Senior Engineering Leadership
-              </span>
               <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl leading-[0.9] mb-8 italic tracking-tight animate-fade-up animation-delay-100">
                 Jaideep Singh
               </h1>
