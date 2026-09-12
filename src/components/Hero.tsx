@@ -57,7 +57,7 @@ const Hero = () => {
                   key={company.name}
                   src={company.logo}
                   alt={company.name}
-                  className="h-8 md:h-10 w-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  className="h-9 md:h-11 w-full object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
                 />
               ))}
             </div>
