@@ -5,7 +5,7 @@ import fiatLogo from '@/assets/logos/fiat-logo.png';
 import bumblebeeLogo from '@/assets/logos/bumblebee-logo.png';
 import ziplineLogo from '@/assets/logos/zipline-logo.png';
 import millLogo from '@/assets/logos/mill-logo.png';
-import headshot from '@/assets/jaideep-headshot.jpeg';
+import headshotAsset from '@/assets/jaideep-headshot.png.asset.json';
 import ProtectedImage from '@/components/ProtectedImage';
 
 // Company logos data - with height adjustments for smaller logos
@@ -88,9 +88,9 @@ const Hero = () => {
           <div className="order-1 lg:order-2 animate-fade-up flex justify-center lg:justify-end">
             <div className="relative">
               <ProtectedImage 
-                src={headshot} 
+                src={headshotAsset.url} 
                 alt="Jaideep Singh" 
-                className="w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-[22rem] rounded-2xl object-cover object-top shadow-2xl"
+                className="w-56 h-72 md:w-64 md:h-80 lg:w-72 lg:h-[22rem] rounded-2xl object-cover object-center shadow-2xl"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5" />
             </div>
