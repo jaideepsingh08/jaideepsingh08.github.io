@@ -28,19 +28,40 @@ const About = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-border">
-              <span className="text-sm text-muted-foreground mb-6 block">
+              <span className="text-sm text-muted-foreground mb-8 block">
                 Capabilities
               </span>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3 gap-x-8 text-sm text-muted-foreground">
-                <span>Systems Engineering</span>
-                <span>Team Leadership</span>
-                <span>Product Certification</span>
-                <span>Robotics</span>
-                <span>Manufacturing Ramp</span>
-                <span>Startup Operations</span>
-                <span>Hardware Integration</span>
-                <span>Embedded Systems</span>
-                <span>Cross-functional Leadership</span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10">
+                <div>
+                  <h3 className="text-sm font-medium text-foreground mb-3">
+                    Build
+                  </h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>Systems Engineering</li>
+                    <li>Robotics</li>
+                    <li>Hardware Integration</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-foreground mb-3">
+                    Ship
+                  </h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>Product Certification</li>
+                    <li>Manufacturing Ramp</li>
+                    <li>Embedded Systems</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-foreground mb-3">
+                    Lead
+                  </h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>Team Leadership</li>
+                    <li>Startup Operations</li>
+                    <li>Cross-functional Leadership</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
