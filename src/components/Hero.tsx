@@ -10,13 +10,13 @@ import chryslerLogo from '@/assets/logos/chrysler-logo.png';
 import ProtectedImage from '@/components/ProtectedImage';
 
 const companyLogos = [
+  { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
   { name: 'Mill', logo: millLogo },
   { name: 'Zipline', logo: ziplineLogo },
   { name: 'UnitX', logo: unitxLogo },
-  { name: 'Fiat', logo: fiatLogo },
   { name: 'Chrysler', logo: chryslerLogo },
+  { name: 'Fiat', logo: fiatLogo },
   { name: 'GreyOrange', logo: greyorangeLogo },
-  { name: 'Bumblebee Spaces', logo: bumblebeeLogo },
 ];
 
 
