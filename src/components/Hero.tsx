@@ -59,7 +59,11 @@ Previously led teams at
                     key={`${company.name}-${i}`}
                     src={company.logo}
                     alt={company.name}
-                    className="shrink-0 h-[1.35rem] md:h-8 w-auto max-w-[104px] md:max-w-[148px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    className={`shrink-0 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 ${
+                      company.name === 'UnitX'
+                        ? 'h-[0.95rem] md:h-6 max-w-[73px] md:max-w-[104px]'
+                        : 'h-[1.35rem] md:h-8 max-w-[104px] md:max-w-[148px]'
+                    }`}
                   />
                 ))}
               </div>
