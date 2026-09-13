@@ -23,28 +23,27 @@ const companyLogos = [
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-20 pb-12 bg-background">
-      <div className="container-custom relative z-10">
+      <div className="container-custom w-full relative z-10">
         {/* Main content */}
-        <header className="mb-24 md:mb-32">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 lg:gap-16">
+        <header className="mb-16 md:mb-24 lg:mb-32">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 md:gap-12 lg:gap-16">
             <div className="max-w-2xl">
-              <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl leading-[0.9] mb-8 italic tracking-tight animate-fade-up animation-delay-100">
+              <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-6 md:mb-8 italic tracking-tight animate-fade-up animation-delay-100">
                 Jaideep Singh
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-muted-foreground max-w-xl animate-fade-up animation-delay-200">
+              <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-muted-foreground max-w-xl animate-fade-up animation-delay-200">
                 Leading hardware organizations from concept to certified production across robotics, autonomous systems, and consumer products.
               </p>
             </div>
 
-            <div className="animate-fade-up animation-delay-300 flex justify-center lg:justify-end mt-10 md:mt-14">
-              <div className="w-[17.5rem] h-[22.5rem] md:w-80 md:h-[27.5rem] border border-border rounded-[1rem] overflow-hidden relative bg-muted">
+            <div className="animate-fade-up animation-delay-300 w-full flex justify-center lg:justify-end mt-6 md:mt-10 lg:mt-14">
+              <div className="w-56 h-72 sm:w-64 sm:h-80 md:w-72 md:h-96 lg:w-80 lg:h-[27.5rem] border border-border rounded-[1rem] overflow-hidden relative bg-muted">
                 <ProtectedImage
                   src={headshot}
                   alt="Jaideep Singh"
                   className="w-full h-full object-cover object-[center_22%]"
                 />
               </div>
-
             </div>
           </div>
 
