@@ -23,7 +23,7 @@ const companyLogos = [
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-20 pb-12 bg-background">
-      <div className="container-custom relative z-10">
+      <div className="container-custom w-full relative z-10">
         {/* Main content */}
         <header className="mb-16 md:mb-24 lg:mb-32">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 md:gap-12 lg:gap-16">
